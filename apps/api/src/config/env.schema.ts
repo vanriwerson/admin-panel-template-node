@@ -18,4 +18,4 @@ export const envSchema = z.object({
   REDIS_PORT: z.coerce.number().int().positive(),
 });
 
-export type Env = z.infer<typeof envSchema>;
+export type EnvSchema = z.infer<typeof envSchema>;

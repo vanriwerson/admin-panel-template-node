@@ -1,7 +1,5 @@
 import configuration from './configuration';
 
-export type Environment = ReturnType<typeof configuration>;
-
 export const Env = {
   APP_PORT: 'app.port',
   APP_ENV: 'app.nodeEnv',
@@ -14,3 +12,5 @@ export const Env = {
   REDIS_HOST: 'redis.host',
   REDIS_PORT: 'redis.port',
 } as const;
+
+export type Environment = ReturnType<typeof configuration>;
